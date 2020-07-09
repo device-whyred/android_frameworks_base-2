@@ -6943,6 +6943,14 @@ public final class Settings {
 
         private static final Validator CENTER_NOTIFICATION_HEADERS_VALIDATOR = BOOLEAN_VALIDATOR;
 
+         /**
+         * Screen off fod
+         * @hide
+         */
+        public static final String FOD_GESTURE = "fod_gesture";
+        /** @hide */
+        public static final Validator FOD_GESTURE_VALIDATOR = BOOLEAN_VALIDATOR;
+
         /**
          * @hide
          */
@@ -7350,6 +7358,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(LIVE_DISPLAY_HINTED);
             PRIVATE_SETTINGS.add(OMNI_DOZE_BRIGHTNESS_FORCE);
             PRIVATE_SETTINGS.add(AUTO_BRIGHTNESS_MIN_VALUE);
+            PRIVATE_SETTINGS.add(FOD_GESTURE);
         }
 
         /**
@@ -7573,6 +7582,7 @@ public final class Settings {
             VALIDATORS.put(CENTER_NOTIFICATION_HEADERS, CENTER_NOTIFICATION_HEADERS_VALIDATOR);
             VALIDATORS.put(OMNI_DOZE_BRIGHTNESS_FORCE, OMNI_DOZE_BRIGHTNESS_FORCE_VALIDATOR);
             VALIDATORS.put(AUTO_BRIGHTNESS_MIN_VALUE, AUTO_BRIGHTNESS_MIN_VALUE_VALIDATOR);
+            VALIDATORS.put(FOD_GESTURE, FOD_GESTURE_VALIDATOR);
         }
 
         /**
